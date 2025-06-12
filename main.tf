@@ -1,6 +1,6 @@
 provider "google" {
-  project = "caramel-analogy-462509-k2"
-  zone    = "us-central1-f"
+  project = "Sirisha"
+  zone    = "us-east1-b"
 }
 
 locals {
@@ -48,7 +48,7 @@ resource "google_compute_health_check" "health" {
 resource "google_compute_instance_group_manager" "manager" {
   name               = "instance-manager-1"
   base_instance_name = "okay"
-  zone               = "us-central1-f"
+  zone               = "us-east1-b"
 
   version {
     instance_template = google_compute_instance_template.temp1.self_link
