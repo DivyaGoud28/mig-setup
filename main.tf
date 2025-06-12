@@ -1,5 +1,5 @@
 provider "google" {
-  project = "Sirisha"
+  project = "sirisha-462007"
   zone    = "us-east1-b"
 }
 
